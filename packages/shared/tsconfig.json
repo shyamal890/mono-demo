@@ -1,0 +1,30 @@
+
+{
+    "extends": "../../tsconfig.json",
+    "compileOnSave": false,
+    "compilerOptions": {
+      "baseUrl": "./",
+      "outDir": "lib",
+      "sourceMap": true,
+      "downlevelIteration": true,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "module": "es2020",
+      "moduleResolution": "node",
+      "importHelpers": true,
+      "declaration": true,
+      "declarationMap": true,
+      "lib": [
+        "es2018",
+        "dom"
+      ],
+      "composite": true,
+      "paths": {
+        "@demo/core-app/*": ["../core-app/src/*"],
+        "@demo/shared/*": ["./src/*"]
+      }
+    },
+    "references": [
+      { "path": "../core-app" } 
+    ]  
+  }
