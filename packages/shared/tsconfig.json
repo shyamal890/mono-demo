@@ -21,7 +21,7 @@
       "composite": true,
       "paths": {
         "@demo/core-app/*": ["../core-app/src/*"],
-        "@demo/shared/*": ["./src/*"]
+        "@demo/shared/*": ["./*"]
       }
     },
     "references": [
